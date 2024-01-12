@@ -24,7 +24,7 @@ local kp =
 // for ArgoCD we need to return just a regular list with all the manifests.
 local manifests =
   [kp.kubePrometheus[name] for name in std.objectFields(kp.kubePrometheus)] +
-  // [kp.prometheusOperator[name] for name in std.objectFields(kp.prometheusOperator)] +
+  [kp.prometheusOperator[name] for name in std.objectFields(kp.prometheusOperator)] +
   [kp.alertmanager[name] for name in std.objectFields(kp.alertmanager)] +
   [kp.blackboxExporter[name] for name in std.objectFields(kp.blackboxExporter)] +
   [kp.grafana[name] for name in std.objectFields(kp.grafana)] +
