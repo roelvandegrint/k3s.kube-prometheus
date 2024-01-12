@@ -31,7 +31,7 @@ local manifests =
   // [ kp.pyrra[name] for name in std.objectFields(kp.pyrra)] +
   // [kp.kubeStateMetrics[name] for name in std.objectFields(kp.kubeStateMetrics)] +
   // [kp.kubernetesControlPlane[name] for name in std.objectFields(kp.kubernetesControlPlane)] +
-  [kp.nodeExporter[name] for name in std.objectFields(kp.nodeExporter)] +
+  [kp.nodeExporter[name] for name in std.objectFields(kp.nodeExporter)];
   // [kp.prometheus[name] for name in std.objectFields(kp.prometheus)] +
   // [kp.prometheusAdapter[name] for name in std.objectFields(kp.prometheusAdapter)];
 
